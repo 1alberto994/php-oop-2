@@ -9,6 +9,7 @@ $prodotti= new products('croccantini',
     ['Cannetta con topino sopra',
     'Tiragraffi per gatto'],
      'casetta');
+ $prodotti->nome='Pet Shop';    
 var_dump($prodotti);
 
 
@@ -17,6 +18,7 @@ var_dump($prodotti);
 
 $cat=new cats('bengala','https://www.gattidelbengala.it/wp-content/uploads/2020/04/Schermata-2020-04-15-alle-11.54.10.png','croccantini','Cannetta con topino sopra',
  'casetta');
+ $cat->nome='Ciccio'; 
 
 var_dump($cat);
 

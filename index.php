@@ -15,8 +15,7 @@ var_dump($prodotti);
 
 
 
-$cat=new cats('bengala','https://www.gattidelbengala.it/wp-content/uploads/2020/04/Schermata-2020-04-15-alle-11.54.10.png','croccantini',['Cannetta con topino sopra',
-'Tiragraffi per gatto'],
+$cat=new cats('bengala','https://www.gattidelbengala.it/wp-content/uploads/2020/04/Schermata-2020-04-15-alle-11.54.10.png','croccantini','Cannetta con topino sopra',
  'casetta');
 
 var_dump($cat);
@@ -40,16 +39,16 @@ var_dump($cat);
             <img src="https://www.gattidelbengala.it/wp-content/uploads/2020/04/Schermata-2020-04-15-alle-11.54.10.png" alt="">
             <ul>
                 <li>
-                    <?php echo 'Tipo razza:BENGALA' ?>
+                    <?php echo  'Tipo razza:' ,$cat->razza ?>
                 </li>
                 <li>
-                <?php echo 'Cibo:CROCCANTINI'?>
+                <?php echo 'Cibo:',$cat->cibo?>
                 </li>
                 <li>
-                <?php echo 'Gioco:CANNA DA PESCA CON TOPINO'?>
+                <?php echo 'Gioco:' ,$cat->giochi?>
                 </li>
                 <li>
-                <?php echo 'cuccia:CASETTA'?>
+                <?php echo 'cuccia:',$cat->cucce?>
                 </li>
             </ul>
         </div>

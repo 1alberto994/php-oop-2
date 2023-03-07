@@ -40,16 +40,16 @@ var_dump($cat);
             <img src="https://www.gattidelbengala.it/wp-content/uploads/2020/04/Schermata-2020-04-15-alle-11.54.10.png" alt="">
             <ul>
                 <li>
-                    <?php echo $razza;?>
+                    <?php echo 'Tipo razza:BENGALA' ?>
                 </li>
                 <li>
-                <?php echo $cibo?>
+                <?php echo 'Cibo:CROCCANTINI'?>
                 </li>
                 <li>
-                <?php echo $giochi?>
+                <?php echo 'Gioco:CANNA DA PESCA CON TOPINO'?>
                 </li>
                 <li>
-                <?php echo $cucce?>
+                <?php echo 'cuccia:CASETTA'?>
                 </li>
             </ul>
         </div>

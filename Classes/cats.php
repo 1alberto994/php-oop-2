@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__.'/product.php';
+require_once __DIR__.'../Traits/nome.php';
 class cats extends products{
+    use Nome;
     public $razza;
     public $URL;
 
@@ -10,5 +12,11 @@ class cats extends products{
          $this->razza=$_razza;
          $this->URL=$URL;
     }
+    
 }
-
+// if(strlen($nome)<5){
+//     throw new Exception('nome non valido');
+// }
+// else{
+//     $this->nome=$nome;
+// }

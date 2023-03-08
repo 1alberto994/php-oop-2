@@ -40,6 +40,9 @@ var_dump($cat);
             <h1>Gatto Bengala</h1>
             <img src="https://www.gattidelbengala.it/wp-content/uploads/2020/04/Schermata-2020-04-15-alle-11.54.10.png" alt="">
             <ul>
+            <li>
+                    <?php echo  'Nome:' ,$cat->nome ?>
+                </li>
                 <li>
                     <?php echo  'Tipo razza:' ,$cat->razza ?>
                 </li>

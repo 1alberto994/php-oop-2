@@ -9,14 +9,15 @@ class cats extends products{
     public function __construct($_razza,$URL,$cibo,$giochi,$cucce)
     {
         parent:: __construct($cibo,$giochi,$cucce);
-         $this->razza=$_razza;
+         
          $this->URL=$URL;
+         if(strlen($_razza)<5){
+            throw new Exception('nome non valido');
+        }
+        else{
+            $this->razza=$_razza;
+        }
     }
     
 }
-// if(strlen($nome)<5){
-//     throw new Exception('nome non valido');
-// }
-// else{
-//     $this->nome=$nome;
-// }
+
